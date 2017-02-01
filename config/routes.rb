@@ -26,7 +26,7 @@ Rails.application.routes.draw do
 
   get 'password_resets/edit'
 
-    default_url_options :host => "localhost:3000"
+    default_url_options :host => "aqueous-wildwood-92497.herokuapp.com"
 
     # ... snip ...
   end
