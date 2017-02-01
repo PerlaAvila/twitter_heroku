@@ -13,4 +13,12 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   resources :users
+  resources :account_activations, only: [:edit]
+
+
+  SampleApp::Application.routes.draw do
+    default_url_options :host => "localhost:3000"
+
+    # ... snip ...
+  end
 end
